@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: venigmasuperservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: venigmasuperservice
+  template:
+    metadata:
+      labels:
+        app: venigmasuperservice 
+    spec:
+      containers:
+        - name: venigmasuperservice 
+          image: enigmadevopsvalerie.azurecr.io/venigmasuperservice
+          ports:
+          - containerPort: 80

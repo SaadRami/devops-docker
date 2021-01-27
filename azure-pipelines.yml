@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '248964c7-af84-45ae-88a1-0bbe7c6f9c71'
-  imageRepository: 'enigmasuperservice'
+  imageRepository: 'venigmasuperservice'
   containerRegistry: 'enigmadevopsvalerie.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'

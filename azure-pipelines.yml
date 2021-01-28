@@ -13,10 +13,9 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '248964c7-af84-45ae-88a1-0bbe7c6f9c71'
   imageRepository: 'venigmasuperservice'
-  containerRegistry: 'enigmadevopsvalerie.azurecr.io'
+  containerRegistry: 'regsaadconter'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'enigmadevopsvaleriee163-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -53,7 +52,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'valeriechantrainedevopsdocker.default'
+    environment: 'devopsdocker.default'
     strategy:
       runOnce:
         deploy:
